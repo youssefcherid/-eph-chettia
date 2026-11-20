@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المؤسسة العمومية الاستشفائية بالشطية - مرواني عابد</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #006699;
+            --secondary-color: #004080;
+            --accent-color: #00a8cc;
+            --bg-color: #f4f7f9;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        /* Top Header */
+        .top-bar {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 8px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            font-weight: 800;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .hero span {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .hero h1 {
+            font-size: 1.6rem;
+            margin: 15px 0;
+            font-weight: 800;
+            line-height: 1.4;
+        }
+
+        .hero p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .btn-outline {
+            border: 1px solid white;
+            color: white;
+        }
+
+        /* Alert Box */
+        .alert-box {
+            background: #e6f2ff;
+            border-right: 4px solid var(--primary-color);
+            padding: 15px;
+            margin: 20px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 20px;
+        }
+
+        .section-tag {
+            color: var(--accent-color);
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .section-heading {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span>الجمهورية الجزائرية الديمقراطية الشعبية</span>
+        <a href="#" class="lang-btn">Français</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-area">
+            EPH CHETTIA - المؤسسة العمومية الاستشفائية بالشطية
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="#about">عن المؤسسة</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="dme-tutorials.html">دروس DME</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span>مؤسسة عمومية استشفائية — ولاية الشلف</span>
+        <h1>المؤسسة العمومية الاستشفائية بالشطية</h1>
+        <p>مرواني عابد — الشطية، الشلف</p>
+        <p>فضاء رقمي للتعريف بالمؤسسة وخدماتها، وتوفير المعلومات والتكوينات للمرضى والمهنيين الصحيين.</p>
+        
+        <div class="hero-btns">
+            <a href="#services" class="btn btn-white">اكتشف الخدمات</a>
+            <a href="dme-tutorials.html" class="btn btn-outline">الدروس التعليمية</a>
+        </div>
+    </section>
+
+    <!-- Alert Box -->
+    <div class="alert-box">
+        <i class="fa-solid fa-circle-info" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+        <div>هذه النسخة أولية. يرجى من إدارة المؤسسة مراجعة المعلومات وإضافة الخدمات المعتمدة قبل النشر الرسمي.</div>
+    </div>
+
+    <!-- About Section -->
+    <section class="content-section" id="about">
+        <span class="section-tag">من نحن</span>
+        <h2 class="section-heading">المؤسسة في خدمتكم</h2>
+        <p style="margin-top: 10px; font-size: 0.95rem; color: #555;">
+            تسعى المؤسسة العمومية الاستشفائية بالشطية إلى تقديم أفضل الخدمات الطبية والرعاية الصحية لجميع المواطنين، مع توفير منصة رقمية متكاملة لتدريب الموظفين وإتاحة الشروحات الخاصة بنظام الملف الطبي الإلكتروني (DME).
+        </p>
+    </section>
+
+</body>
+</html>
